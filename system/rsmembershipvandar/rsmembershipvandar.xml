@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.0" type="plugin" group="system" method="upgrade">
-    <name>PLG_RSM_VANDAR_NAME</name>
-    <description>PLG_RSM_VANDAR_DESC</description>
+    <name>Vandar Payment Gateway</name>
+    <description>پرداخت امن وندار</description>
     <creationDate>August 2020</creationDate>
     <copyright>Vandar.com</copyright>
     <author>Publisher: Vandar</author>
@@ -25,24 +25,24 @@
     </languages>
 
     <updateservers>
-        <server type="extension" priority="1" name="System - Vandar for RSMembership">https://static.vandar.io/plugins/joomla/rsmembership-vandar-udpate.xml</server>
+        <server type="extension" priority="1" name="Vandar for RSMembership">https://static.vandar.io/plugins/joomla/rsmembership-vandar-udpate.xml</server>
     </updateservers>
 
     <config>
         <fields name="params">
             <fieldset name="basic">
-                <field name="api_key" type="text" size="60" label="API KEY" description="PLG_RSM_VANDAR_API_KEY_DESC"/>
-                <field name="currency" type="radio" default="rial" label="PLG_RSM_VANDAR_CURRENCY_LABEL" class="btn-group" description="PLG_RSM_VANDAR_CURRENCY_DESC">
-                    <option value="rial">PLG_RSM_VANDAR_CURRENCY_RIAL</option>
-                    <option value="toman">PLG_RSM_VANDAR_CURRENCY_TOMAN</option>
+                <field name="api_key" type="text" size="60" label="API KEY" description="کلید API"/>
+                <field name="currency" type="radio" default="rial" label="واحد پولی" class="btn-group" description="واحد پولی">
+                    <option value="rial">ریال</option>
+                    <option value="toman">تومان</option>
                 </field>
-                <field name="success_massage" type="textarea" rows="4" label="PLG_RSM_VANDAR_SUCCESS_MESSAGE_LABEL"
-                       description="PLG_RSM_VANDAR_HELP_MESSAGE"
+                <field name="success_massage" type="textarea" rows="4" label="پرداخت با موفقیت انجام شد"
+                       description="Vandar"
                        default="پرداخت شما با موفقیت انجام شد. کد رهگیری: {track_id}"/>
-                <field name="failed_massage" type="textarea" rows="4" label="PLG_RSM_VANDAR_ERROR_MESSAGE_LABEL"
-                       description="PLG_RSM_VANDAR_HELP_MESSAGE"
+                <field name="failed_massage" type="textarea" rows="4" label="پرداخت ناموفق انجام شد"
+                       description="Vandar"
                        default="پرداخت شما ناموفق بوده است. لطفا مجددا تلاش نمایید یا در صورت بروز اشکال با مدیر سایت تماس بگیرید."/>
-                <field name="help" type="spacer" label="PLG_RSM_VANDAR_HELP_MESSAGE"/>
+                <field name="help" type="spacer" label="Vandar"/>
             </fieldset>
         </fields>
     </config>
